@@ -63,9 +63,6 @@ body{
     border-radius: 15px;
     cursor: pointer;
 }
-.product:hover{
-    opacity: 0.8;      
-}
 .product-image{
     display: flex;
     justify-content: center;
