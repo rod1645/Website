@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content:left;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .menu-icon {
     cursor: pointer;
@@ -37,7 +37,7 @@ body{
     align-items: center;
     justify-content: right;
     flex-shrink: 0;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .search-button{
     margin-right: 15px;
@@ -77,10 +77,7 @@ body{
     border-top-right-radius: 15px;
 }
 .product-info{
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 15px;
 }
 .product-title{
     font-weight: 700;
