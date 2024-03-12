@@ -19,12 +19,6 @@ body{
     background-color: transparent;
     border-width: 0;
     font-size: 18px;
-}
-.header-text-button{
-    color: white;
-    background-color: transparent;
-    border-width: 0;
-    font-size: 18px;
     text-decoration: none;
 }
 .left-section{
@@ -43,6 +37,9 @@ body{
     font-weight: 700;
     cursor: pointer;
     flex-shrink: 0;
+    color: white;
+    border-width: 0;
+    text-decoration: none;
 }
 .right-section{
     color: white;
@@ -54,6 +51,10 @@ body{
 }
 .login-button{
     margin-right: 10px;
+    color: white;
+    border-width: 0;
+    font-size: 18px;
+    text-decoration: none;
 }
 .login-button:hover,.cart-button:hover{
     color: gray;
