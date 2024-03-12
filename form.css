@@ -44,6 +44,7 @@ body{
     cursor: pointer;
     flex-shrink: 0;
     color: white;
+    border-width: 0;
     text-decoration: none;
 }
 .right-section{
@@ -56,6 +57,10 @@ body{
 }
 .login-button{
     margin-right: 10px;
+    color: white;
+    border-width: 0;
+    font-size: 18px;
+    text-decoration: none;
 }
 .login-button:hover,.cart-button:hover{
     color: gray;
