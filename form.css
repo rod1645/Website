@@ -121,7 +121,7 @@ p{
         transform: translateY(-50%) scale(0.8);
         background-color: white;
         padding: 0 5px;
-        color: #2196f3;
+        color: black;
     }
 
 
@@ -131,7 +131,7 @@ p{
     border:none;
     font-size: 30px;
     color: white;
-    background-color: #0064ff;
+    background-color: black;
     width: 100%;
     cursor: pointer;
     margin-top: 10px;
