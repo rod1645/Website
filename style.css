@@ -20,6 +20,13 @@ body{
     border-width: 0;
     font-size: 18px;
 }
+.header-text-button{
+    color: white;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
 .left-section{
     color: white;
     display: flex;
@@ -31,7 +38,7 @@ body{
     cursor: pointer;
     margin-right: 10px;
 }
-.title{    
+.title-header{    
     font-size: 25px;
     font-weight: 700;
     cursor: pointer;
