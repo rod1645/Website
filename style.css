@@ -5,7 +5,7 @@ body{
 }
 .header{
     background-color: black;
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,6 +13,12 @@ body{
     position: fixed;
     left: 0px;
     right: 0px;
+}
+.header-button{
+    color: white;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 18px;
 }
 .left-section{
     color: white;
@@ -23,9 +29,9 @@ body{
 }
 .menu-icon {
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 10px;
 }
-.title-button{    
+.title{    
     font-size: 25px;
     font-weight: 700;
     cursor: pointer;
@@ -39,11 +45,8 @@ body{
     flex-shrink: 0;
     margin-right: 10px;
 }
-.search-button{
-    margin-right: 15px;
-}
 .login-button{
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .login-button:hover,.cart-button:hover{
     color: gray;
