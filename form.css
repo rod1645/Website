@@ -20,6 +20,13 @@ body{
     border-width: 0;
     font-size: 18px;
 }
+.header-text-button{
+    color: white;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
 .left-section{
     color: white;
     display: flex;
@@ -31,12 +38,13 @@ body{
     cursor: pointer;
     margin-right: 10px;
 }
-.title{    
+.title-header{    
     font-size: 25px;
     font-weight: 700;
     cursor: pointer;
     flex-shrink: 0;
     color: white;
+    text-decoration: none;
 }
 .right-section{
     color: white;
@@ -75,7 +83,7 @@ p{
     font-size: 16px;
 }
 
-.title{
+.title-form{
     color: black;
     text-align:center;
     font-size: 50px;
@@ -114,14 +122,14 @@ p{
 
     .input:focus, input:valid { /*Outline selected*/
         outline: none;
-        border: 1.5px solid #1a73e8;
+        border: 1.5px solid black;
     }
 
     .input:focus ~ label, input:valid ~ label { /*Short text*/
         transform: translateY(-50%) scale(0.8);
         background-color: white;
         padding: 0 5px;
-        color: black;
+        color: #2196f3;
     }
 
 
