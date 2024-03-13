@@ -76,7 +76,7 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    margin: 100px 10px;
+    margin: 90px 10px;
     height: 650px;
 }
     p{
