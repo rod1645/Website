@@ -122,12 +122,14 @@ body{
         outline: none;
         border: 1.5px solid #1a73e8;
     }
-    .input:focus ~ .user-label, .input:valid ~ .user-label {
+    .input:focus ~ .user-label,
+    .input:valid ~ .user-label {
         transform: translateY(-200%) scale(0.8);
         background-color: white;
         padding: 0 5px;
         color: #2196f3;
     }
+
       
 
 
@@ -135,7 +137,7 @@ body{
     padding: 15px 0px;
     border-radius: 15px;
     border:none;
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     background-color: black;
     width: 100%;
