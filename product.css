@@ -1,0 +1,196 @@
+body{
+    font-family: "Roboto", Arial;
+    margin: 0;
+}
+.header{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+.header-button{
+    color: white;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+.left-section{
+    color: white;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-left: 10px;
+}
+.menu-icon {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.title-header{    
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: white;
+    border-width: 0;
+    text-decoration: none;
+}
+.right-section{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.login-button{
+    margin-right: 10px;
+    color: white;
+    border-width: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+.login-button:hover,.cart-button:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*.product{
+    margin: 0px 50px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product-image{
+    width: 30%;
+    margin-right: 50px;
+}
+.product-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.product-info{
+    width: 70%;
+    padding: 0px 30px;
+}
+.product-title{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.product-description{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.product-long-description{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.stripe-buy-button{
+    width: 100%;
+}*/
+
+
+
+/* Style général de la page de produit */
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alignement au début du conteneur */
+    margin: 0 50px;
+    padding-top: 125px; /* Ajout de padding top pour compenser la hauteur de l'en-tête */
+}
+
+/* Style de la partie image du produit */
+.product-image {
+    width: 31%; /* Ajustez la largeur de l'image selon vos besoins */
+    margin-right: 20px; /* Espacement entre l'image et les détails du produit */
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-info {
+    width: 69%;
+    padding: 20px 40px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.product-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-description {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.product-long-description {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: black;
+}
+.product-price {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.product-buy-button {
+    width: 100%;
+    height: 50px;
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.product-buy-button:hover {
+    opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .product {
+        flex-direction: column;
+        margin: 0 5px;
+    }
+    .product-image {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .product-info {
+        width: calc(100% - 40px); /* Réduire la largeur de l'élément info en tenant compte du padding */
+        padding: 20px; /* Ajuster le padding pour qu'il n'ajoute pas de largeur supplémentaire */
+        margin: 0;
+    }
+}
