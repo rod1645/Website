@@ -114,6 +114,7 @@ body{
     row-gap: 45px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 50px;
 }
 @media screen and (max-width: 1200px) {
     .grid {
