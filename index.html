@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -11,7 +10,6 @@
     <title>Perfume Ai</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-    
 <body>
     <div class="header">
         <div class="left-section">
@@ -24,43 +22,29 @@
         </div>        
     </div>
 
-
-
     <div class="grid" id="grid"></div>
 
     <script>
-        // Fonction pour lire le fichier texte
         function readTextFile(file, lineNumber) {
             return new Promise((resolve, reject) => {
                 fetch(file)
                     .then(response => response.text())
                     .then(text => {
-                        // Séparer les lignes
                         const lines = text.split('\n');
-                        // Récupérer la ligne souhaitée
-                        const selectedLine = lines[lineNumber - 1]; // Les tableaux commencent à l'index 0
+                        const selectedLine = lines[lineNumber - 1];
                         resolve(selectedLine.trim());
                     })
                     .catch(error => reject(error));
             });
         }
-    
-        // Déclaration de la variable contenant le nombre de produits
         var productNumber = 19;
-    
-        // Sélection de l'élément parent
         var gridContainer = document.getElementById('grid');
-    
-        // Tableau pour stocker les promesses de lecture de fichiers texte
         var promises = [];
-    
-        // Boucle pour générer les éléments HTML et lire les fichiers texte
         for (var i = 1; i <= productNumber; i++) {
             (function(index) {
-                // Création des éléments product, image et info
                 var productDiv = document.createElement('div');
                 productDiv.className = 'product';
-                productDiv.id = 'product-' + index; // Ajout d'un ID unique pour chaque produit
+                productDiv.id = 'product-' + index;
                 var imageDiv = document.createElement('div');
                 imageDiv.className = 'product-image';
                 var image = document.createElement('img');
@@ -77,13 +61,9 @@
                 descriptionDiv.id = 'product-description-' + index;
                 infoDiv.appendChild(titleDiv);
                 infoDiv.appendChild(descriptionDiv);
-    
-                // Ajout des éléments à l'élément parent
                 productDiv.appendChild(imageDiv);
                 productDiv.appendChild(infoDiv);
                 gridContainer.appendChild(productDiv);
-    
-                // Lecture des fichiers texte et stockage des promesses
                 promises.push(
                     readTextFile('product-info/product-title.txt', index).then(title => {
                         document.getElementById('product-title-' + index).textContent = title;
@@ -95,22 +75,16 @@
                         document.getElementById('product-image-' + index).src = imageSrc;
                     })
                 );
-    
-                // Ajout d'un gestionnaire d'événements click pour ouvrir la page spécifique du produit
                 productDiv.addEventListener('click', function() {
-                    // Redirection vers la page spécifique du produit
                     window.location.href = 'product.html?id=' + index;
                 });
             })(i);
         }
-    
-        // Attendre que toutes les promesses soient résolues
         Promise.all(promises)
             .then(() => console.log('Tous les fichiers texte ont été lus et les éléments de produit ont été remplis.'))
             .catch(error => console.error('Une erreur est survenue lors de la lecture des fichiers texte : ', error));
     </script>
     
-
     <!--<div class="grid" id="grid">
         <div class="product">
             <div class="product-image">
