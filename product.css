@@ -181,7 +181,7 @@ body{
 @media screen and (max-width: 600px) {
     .product {
         flex-direction: column;
-        margin: 0 5px;
+        margin: 0 12px;
     }
     .product-image {
         width: 100%;
@@ -192,5 +192,6 @@ body{
         width: calc(100% - 40px); /* Réduire la largeur de l'élément info en tenant compte du padding */
         padding: 20px; /* Ajuster le padding pour qu'il n'ajoute pas de largeur supplémentaire */
         margin: 0;
+        margin-bottom: 50px;
     }
 }
