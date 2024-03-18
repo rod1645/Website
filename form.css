@@ -5,7 +5,7 @@ body{
 }
 .header{
     background-color: black;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,10 +68,6 @@ body{
     color: gray;
     cursor: pointer;
 }
-
-
-
-
 
 .form{
     margin: 0px 15px;
@@ -150,8 +146,6 @@ p{
     width: 40px;
     height: 40px;
 }
-
-
 
 form{
     width: 400px;
