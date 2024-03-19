@@ -4,12 +4,13 @@ body{
 }
 .header{
     background-color: black;
-    height: 80px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0px;
     left: 0px;
     right: 0px;
     z-index: 9999;
@@ -60,17 +61,20 @@ body{
     color: gray;
     cursor: pointer;
 }
-/*.grid{
-    padding-top: 125px;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-    minmax(225px, 1fr));
-    gap: 10px;
-}*/
+
+
+.banner{
+    margin-top: 90px;
+    width: 100%;
+}
+.banner-img{
+    width: 100%;
+}
 .product{
-    background-color: lightgray;
+    background-color: white;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -83,6 +87,9 @@ body{
     align-items: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
 }
 .product-picture{
     height: 100%;
@@ -103,9 +110,18 @@ body{
     margin-bottom: 10px;
 }
 
+/*.grid{
+    padding-top: 125px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(225px, 1fr));
+    gap: 10px;
+}*/
 .grid{
     display: grid;
-    padding-top: 125px;
+    padding-top: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 10px;  
     row-gap: 45px;
